@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap);
+
+.names {color: white;
+}
+
+#ump {
+    color: blue;
+}
+
+.links{
+    display: block;
+    color: white;
+    background-color: #1e2c42;
+    text-decoration-line: none;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0 5px 5px 5px;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+
+.links:hover{
+    background: #8437f9;
+    color: black;
+
+}
+
+p {
+    color:white;
+}
+
+* {font-size: 30px;
+    font-family: 'Protest Riot', sans-serif;
+    background:#0d1e3a;
+    text-align: center;
+    color: white;
+}
+
+body{
+    padding: 30px;
+    border: 30px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+
+}
+
+img{
+    border: 1px solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+    border-width: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.social-icon{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #8437f9;
+    text-decoration: none;
+}
+
+.name{
+    font-size: 50px;
+}
+
+.paragraph{
+    color: blue;
+}
