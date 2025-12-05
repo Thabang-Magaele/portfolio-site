@@ -172,7 +172,7 @@ header h1{
 }
 
 .about-image img{
-    width: 300px;
+    width: 350px;
     height: 500px;
     border-radius: 5%;
     border-style: solid;
@@ -225,6 +225,11 @@ header h1{
 #autospa img{
     width: 400px;
     height: 300px;
+}
+
+#fueltrack img{
+    width: 400px;
+    height: 500px;
 }
 
 #autospa-link{
