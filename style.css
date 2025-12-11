@@ -222,6 +222,15 @@ header h1{
     color: #ff7e5f;
 }
 
+#cv-download{
+    font-size: 20px;
+    color: #ff7e5f;
+    text-decoration: none;
+    border: 2px solid #ff7e5f;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
 #autospa img{
     width: 400px;
     height: 300px;
@@ -230,6 +239,14 @@ header h1{
 #fueltrack img{
     width: 400px;
     height: 500px;
+}
+
+#fueltrack-video {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #ff7e5f;
+    margin-top: 20px;
 }
 
 #autospa-link{
@@ -304,6 +321,12 @@ header h1{
     }
 
     #autospa img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #fueltrack-video {
         width: 100%;
         max-width: 300px;
         height: auto;
@@ -395,6 +418,12 @@ header h1{
         max-width: 400px;
         height: auto;
     }
+
+    #fueltrack-video {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }    
 
     .tech-stack-container {
         justify-content: center;
