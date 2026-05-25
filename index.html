@@ -1,164 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thabang Magaele — Graduate Developer. Junior developer skilled in Java, JavaScript and SQL.">
+  <title>Thabang Magaele — Graduate Developer</title>
+  <link rel="stylesheet" href="style.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>      
-  <title>Thabang Magaele</title>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <header class="header">
-    <img src="Images/headshot.jpeg">
-    <h1>Thabang Magaele <br>Graduate Developer</h1>
-    <nav id="navbar">
-       <a href="index.html">Home</a> 
-       <a href="projects.html">Projects</a>
-       <a href="education.html">Education</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-avatar" src="Images/headshot.jpeg" alt="Thabang Magaele">
+      <span class="brand-text">
+        <strong>Thabang Magaele</strong>
+        <small>Graduate Developer</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a class="nav-cv" href="Resources/cert/Thabang Magaele CV.pdf" download="Thabang_Magaele_CV" target="_blank">Download CV</a>
     </nav>
   </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<span>
-  3rd Year ICT Student<br> One Line Of Code At A Time <br>
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <span class="status-pill">
+            <span class="status-dot"></span> Open to Work
+          </span>
 
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="linkedin" target="_blank"><ion-icon name="logo-linkedin"  class="social-icon" ></ion-icon> </a> 
-        <a href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank"> <ion-icon name="logo-github"  class="social-icon" ></ion-icon> </a>     
-    </div>   
+          <h1>
+            Thabang<br>
+            <span class="gradient-text">Magaele</span>
+          </h1>
 
-        <a href="Resources/cert/Thabang_Magaele_CV.pdf" download="Thabang_Magaele_CV" title="Download CV" target="_blank" id="cv-download"> Download CV </a>
-</span>
+          <span class="role">&lt;Graduate <b>Developer</b> /&gt;</span>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About</h2>      
-      <p>
-        I'm Thabang Magaele, a <b>Junior Developer</b> with knowledge in <b>Java</b>, <b>JavaScript</b>, and <b>SQL</b>. A track record of
-        deploying <b>live production projects</b>. Experienced in <b>web development</b> and
-        <b>desktop application development</b> using Agile Methodologies. Eager to leverage my
-        technical skills to contribute to scalable software solutions in a professional internship.
-      </p>
-    </div>
-    <div class="about-image">
-      <img src="Images/headshot2.jpeg">
-    </div>
-  </div>
-</section>
+          <p class="hero-tagline">
+            // 3rd-year ICT student — building solutions<br>
+            // one line of code at a time.
+          </p>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>Programming Languages</h2>      
-      <div class="tech-stack-container">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">
+              View Projects <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+            <a class="btn btn-ghost" href="Resources/cert/Thabang Magaele CV.pdf" download="Thabang_Magaele_CV" target="_blank">
+              <ion-icon name="download-outline"></ion-icon> Download CV
+            </a>
 
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/java.png"> <br>          
-          Java <br>
-          <p id="inter">Intermediate</p>
+            <div class="hero-socials">
+              <a class="icon-btn" href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="LinkedIn" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a class="icon-btn" href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!--
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/php.png"> <br>          
-          PHP <br>
-          <p id="inter">Intermediate</p>
-        </div>-->
-
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/html-5.png"> <br>          
-          HTML5 <br>
-          <p id="pro">Proficient</p>
+        <!-- code window visual 
+        <div class="hero-visual reveal">
+          <div class="code-card">
+            <div class="code-bar">
+              <i></i><i></i><i></i>
+              <span>developer.java</span>
+            </div>
+            <pre class="code-body"><span class="ln">1</span><span class="c-key">public class</span> <span class="c-var">Thabang</span> {
+<span class="ln">2</span>  <span class="c-key">String</span> role = <span class="c-str">"Graduate Developer"</span>;
+<span class="ln">3</span>  <span class="c-key">String</span>[] stack = { <span class="c-str">"Java"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"SQL"</span> };
+<span class="ln">4</span>  <span class="c-key">boolean</span> openToWork = <span class="c-var">true</span>;
+<span class="ln">5</span>
+<span class="ln">6</span>  <span class="c-com">// let's build something great</span>
+<span class="ln">7</span>  <span class="c-key">void</span> <span class="c-var">contribute</span>() {<span class="cursor"></span> }
+<span class="ln">8</span>}</pre>
+          </div>
         </div>
-        
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/css-3.png"> <br>          
-          CSS <br>
-          <p id="pro">Proficient</p>
-        </div>     
+      </div>
+-->
+      <!-- stats -->
+      <div class="wrap">
+        <div class="stats reveal">
+          <div class="stat">
+            <b class="gradient-text">2026</b>
+            <span>Final year — Diploma in ICT</span>
+          </div>
+          <div class="stat">
+            <b class="gradient-text">6×</b>
+            <span>Industry certifications earned</span>
+          </div>
+          <div class="stat">
+            <b class="gradient-text">8+</b>
+            <span>Live production projects deployed</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/js.png"> <br>          
-          JavaScript <br>
-          <p id="begin">Learning</p>
-        </div>     
-        
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/react.png"> <br>          
-          React <br>
-          <p id="begin">Learning</p>
-        </div>        
-
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/database.png"> <br>          
-          SQL <br>
-          <p id="pro">Proficient</p>
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Professional Experience</span>
+          <h2>Where I put it <span class="gradient-text">into practice</span>.</h2>
         </div>
 
+        <div class="panel reveal">
+          <div class="exp-card">
+            <div class="exp-mark">CS</div>
+            <div class="exp-role">
+              <h3>Founder &amp; Web Developer</h3>
+              <div class="exp-company">
+                <b>CoreStack Technologies</b>
+                <span class="exp-meta">Jan 2025 — Present · 1 yr 5 mo · Mbombela, South Africa · Freelance</span>
+              </div>
+
+              <p class="exp-desc">
+                I run CoreStack Technologies, a web development practice helping South
+                African small businesses build a professional online presence. I handle
+                every project end-to-end — from the first client consultation through
+                design, development, deployment and ongoing maintenance.
+              </p>
+
+              <ul class="exp-points">
+                <li>Designed, built and deployed <b>8+ live, mobile-responsive websites</b> for clients across funeral services, restaurants, landscaping and retail.</li>
+                <li>Managed the <b>full project lifecycle</b> — consultation, scoping, quoting, build and launch — communicating directly with clients throughout.</li>
+                <li>Provide <b>hosting, updates and technical support</b>, sustaining long-term client relationships with a 100% retention rate.</li>
+                <li>Built with <b>HTML, CSS &amp; JavaScript</b>; deployed and managed on Vercel with custom domains and DNS configuration.</li>
+              </ul>
+
+              <div class="exp-foot">
+                <div class="exp-kpis">
+                  <div class="exp-kpi">
+                    <b class="gradient-text">8+</b>
+                    <span>Live sites shipped</span>
+                  </div>
+                  <div class="exp-kpi">
+                    <b class="gradient-text">6+</b>
+                    <span>Active clients</span>
+                  </div>
+                  <div class="exp-kpi">
+                    <b class="gradient-text">100%</b>
+                    <span>Client retention</span>
+                  </div>
+                </div>
+                <a class="exp-link" href="projects.html">
+                  See the work <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="panel reveal">
+          <div class="about-grid">
+            <div>
+              <span class="eyebrow">About me</span>
+              <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);margin-top:12px;">
+                Turning ideas into <span class="gradient-text">working software</span>.
+              </h2>
+              <p>
+                I'm Thabang Magaele, a <b>Junior Developer</b> with knowledge in <b>Java</b>,
+                <b>JavaScript</b> and <b>SQL</b>, and a track record of deploying
+                <b>live production projects</b>.
+              </p>
+              <p>
+                I'm experienced in <b>web development</b> and <b>desktop application
+                development</b> using Agile methodologies, and I'm eager to leverage my
+                technical skills to contribute to scalable software solutions in a
+                professional internship.
+              </p>
+            </div>
+            <div class="about-portrait">
+              <img src="Images/headshot2.jpeg" alt="Thabang Magaele">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LANGUAGES ===================== -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Tech stack</span>
+          <h2>Programming Languages</h2>
+          <p>The languages and frameworks I reach for when building.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/java.png" alt="Java">
+            <h3>Java</h3>
+            <div class="level inter">Intermediate</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/html-5.png" alt="HTML5">
+            <h3>HTML5</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/css-3.png" alt="CSS">
+            <h3>CSS</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/js.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <div class="level learn">Learning</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/react.png" alt="React">
+            <h3>React</h3>
+            <div class="level learn">Learning</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/database.png" alt="SQL">
+            <h3>SQL</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOOLS ===================== -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Workflow</span>
+          <h2>Tools &amp; Platforms</h2>
+          <p>What I use to ship, version and deploy my work.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/social.png" alt="Git">
+            <h3>Git Version Control</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/github.png" alt="GitHub">
+            <h3>GitHub</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/aws.png" alt="AWS">
+            <h3>AWS</h3>
+            <div class="level learn">Learning</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/mysql.png" alt="MySQL">
+            <h3>MySQL</h3>
+            <div class="level pro">Proficient</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/database (1).png" alt="cPanel">
+            <h3>cPanel</h3>
+            <div class="level inter">Intermediate</div>
+          </div>
+          <div class="skill-card reveal">
+            <img class="ico" src="stack-images/xampp.png" alt="XAMPP">
+            <h3>XAMPP / MAMP</h3>
+            <div class="level inter">Intermediate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="gradient-text">Thabang Magaele</h3>
+          <p>Graduate developer building scalable software, one line of code at a time. Open to internship opportunities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="mailto:magaelethabang@gmail.com">magaelethabang@gmail.com</a>
+          <a href="mailto:240241177@ump.ac.za">240241177@ump.ac.za</a>
+          <a href="tel:+27760915274">+27 76 091 5274</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2024–2026 Thabang Magaele. All rights reserved.</small>
+        <div class="hero-socials">
+          <a class="icon-btn" href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="LinkedIn" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a class="icon-btn" href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>Tools</h2>      
-      <div class="tech-stack-container">
-
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/social.png"> <br>          
-          Git Version Control <br>
-          <p id="pro">Proficient</p>
-        </div>
-
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/github.png"> <br>          
-          GitHub <br>
-          <p id="pro">Proficient</p>
-        </div>
-
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/aws.png"> <br>          
-          AWS <br>
-          <p id="begin">Learning</p>
-        </div>
-        
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/mysql.png"> <br>          
-          MySQL <br>
-          <p id="pro">Proficient</p>
-        </div>
-        
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/database (1).png"> <br>          
-          CPanel <br>
-          <p id="inter">Intermediate</p>
-        </div>
-        
-        <div class="stack">
-          <img id="tech-stack-img" src="stack-images/xampp.png"> <br>          
-          XAMPP / MAMP <br>
-          <p id="inter">Intermediate</p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-  <footer class="footer">
-    <p>Email: magaelethabang@gmail.com</p>
-    <p>School: 240241177@ump.ac.za</p>
-    <p>Phone: +27 76 091 5274</p>
-    <p>© 2024 Thabang Magaele. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

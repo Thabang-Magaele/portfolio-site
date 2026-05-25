@@ -1,110 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Thabang Magaele — live client websites built through CoreStack Technologies, plus the FuelTrack desktop system.">
+  <title>Projects — Thabang Magaele</title>
+  <link rel="stylesheet" href="style.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>      
-  <title>Thabang Magaele</title>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <header class="header">
-    <img src="Images/headshot.jpeg">
-    <h1>Thabang Magaele <br>Graduate Developer</h1>
-    <nav id="navbar">
-       <a href="index.html">Home</a> 
-       <a href="projects.html">Projects</a>
-       <a href="education.html">Education</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-avatar" src="Images/headshot.jpeg" alt="Thabang Magaele">
+      <span class="brand-text">
+        <strong>Thabang Magaele</strong>
+        <small>Graduate Developer</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="education.html">Education</a>
+      <a class="nav-cv" href="Resources/cert/Thabang Magaele CV.pdf" download="Thabang_Magaele_CV" target="_blank">Download CV</a>
     </nav>
   </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-  <span>
-    Thabang's Projects <br>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="linkedin" target="_blank"><ion-icon name="logo-linkedin"  class="social-icon" ></ion-icon> </a> 
-        <a href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank"> <ion-icon name="logo-github"  class="social-icon" ></ion-icon> </a> 
-    </div>   
-
-        <a href="Resources/Thabang Magaele Resume.pdf" download="Thabang_Magaele_CV" title="Download CV" target="_blank" id="cv-download"> Download CV </a>
-
-</span>
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        H2oAutoSpaCarWash - Website
-        <a id="autospa-link" href="https://h2oautospacarwash.co.za" target="_blank">h2oautospacarwash.co.za</a>
-    </h2> 
-
+  <main>
+    <!-- ===================== PAGE HEAD ===================== -->
+    <section class="page-head wrap reveal">
+      <span class="eyebrow" style="justify-content:center;">Selected work</span>
+      <h1>Thabang's <span class="gradient-text">Projects</span></h1>
       <p>
-        H2O Auto Spa is a modern, mobile-responsive <br>
-        website built for a car wash and detailing 
-        business located in White River, Mpumalanga. 
-        The primary goal of the project was to give 
-        the business a clean, professional online presence 
-        where customers could view services, pricing, 
-        location details, and contact information.
+        Live websites I've designed, developed and deployed for growing South African
+        businesses through <b>CoreStack Technologies</b> — my web development practice.
       </p>
+    </section>
 
-      <a id="autospa-link" href="https://github.com/Thabang-Magaele/h2oautospa-website" target="_blank">Learn More</a>
+    <!-- ===================== CLIENT WORK GALLERY ===================== -->
+    <section class="section" style="padding-top:16px;">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Live production · 8 sites</span>
+          <h2>Client Websites</h2>
+          <p>Mobile-responsive, fast-loading websites built to turn visitors into customers.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <a class="work-card reveal" href="https://kcrfunerals.vercel.app" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/kcrfunerals.png" alt="KCR Elegance Funerals website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Service Provider</span>
+              <h3>KCR Elegance Funerals</h3>
+              <span class="work-link">kcrfunerals.vercel.app <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://ransomegardens.vercel.app" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/ransomegardens.png" alt="Ransome Gardens website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Service Provider</span>
+              <h3>Ransome Gardens</h3>
+              <span class="work-link">ransomegardens.vercel.app <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://www.daveskitchen.site" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/daveskitchen.png" alt="Daves Kitchen website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Restaurant</span>
+              <h3>Daves Kitchen</h3>
+              <span class="work-link">daveskitchen.site <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://isabellaskitchen.vercel.app" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/isabellapizza.png" alt="Isabella's Kitchen website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Restaurant</span>
+              <h3>Isabella's Kitchen</h3>
+              <span class="work-link">isabellaskitchen.vercel.app <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://kudzaitrees.vercel.app" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/kudzaitrees.png" alt="Kudzai Tree Felling website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Landscaping</span>
+              <h3>Kudzai Tree Felling</h3>
+              <span class="work-link">kudzaitrees.vercel.app <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://kudzaiepoxyfloors.vercel.app" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/kudzaifloors.png" alt="Kudzai Epoxy Floors website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Contractor</span>
+              <h3>Kudzai Epoxy Floors</h3>
+              <span class="work-link">kudzaiepoxyfloors.vercel.app <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://h2oautospacarwash.co.za" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/autospa.png" alt="H2O Auto Spa website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Business Website</span>
+              <h3>H2O Auto Spa</h3>
+              <span class="work-link">h2oautospacarwash.co.za <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal" href="https://bakedbylwazi.co.za" target="_blank">
+            <div class="work-thumb">
+              <img src="https://www.corestacktechnologies.co.za/images/bakedbylwazi.png" alt="Baked by Lwazi website">
+            </div>
+            <div class="work-meta">
+              <span class="work-cat">Food &amp; Bakery</span>
+              <h3>Baked by Lwazi</h3>
+              <span class="work-link">bakedbylwazi.co.za <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- ===================== FEATURED DESKTOP BUILD ===================== -->
+        <div class="section-head sub-head reveal">
+          <span class="eyebrow">Beyond the web</span>
+          <h2>Desktop Development</h2>
+          <p>A full-stack desktop system showcasing Java, databases and API integration.</p>
+        </div>
+
+        <article class="project reveal">
+          <div class="project-media">
+            <video controls preload="metadata" poster="projects-images/FuelTrack/2.png">
+              <source src="projects-images/FuelTrack/1003.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="media-row">
+              <img src="projects-images/FuelTrack/2.png" alt="FuelTrack screen">
+              <img src="projects-images/FuelTrack/1.png" alt="FuelTrack screen">
+              <img src="projects-images/FuelTrack/4.png" alt="FuelTrack screen">
+              <img src="projects-images/FuelTrack/3.png" alt="FuelTrack screen">
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">// 2nd-year project · Desktop</span>
+            <h2>FuelTrack — Fuel Administration System</h2>
+            <p>
+              A prototype fuel administration system that streamlines fuel requests and
+              approvals between users and administrators. It features secure, role-based
+              authentication — users submit requests stored in an SQLite database, while
+              administrators manage, approve or reject them through a clean JavaFX interface.
+            </p>
+            <p>
+              Every new request automatically triggers an SMS notification to administrators
+              via the BulkSMS API, ensuring real-time oversight. The result is a fast,
+              organized and automated workflow that replaces manual fuel management.
+            </p>
+            <div class="tech-tags">
+              <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+              <span>SQLite</span><span>XML</span><span>BulkSMS API</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="gradient-text">Thabang Magaele</h3>
+          <p>Graduate developer building scalable software, one line of code at a time. Open to internship opportunities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="mailto:magaelethabang@gmail.com">magaelethabang@gmail.com</a>
+          <a href="mailto:240241177@ump.ac.za">240241177@ump.ac.za</a>
+          <a href="tel:+27760915274">+27 76 091 5274</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2024–2026 Thabang Magaele. All rights reserved.</small>
+        <div class="hero-socials">
+          <a class="icon-btn" href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="LinkedIn" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a class="icon-btn" href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="about-image" id="autospa">
-      <img src="projects-images/H2oAutoSpaCarWash/Screenshot 2025-12-04 at 23.56.54.png"> <br>
-      <img src="projects-images/H2oAutoSpaCarWash/1.JPG">
-    </div>
-
-  </div>
-</section>
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        FuelTrack - Fuel Administration System
-    </h2> 
-      <p>
-        My second year project. FuelTrack is a prototype fuel administration system built using Java, 
-         JavaFX, SceneBuilder, SQLite, XML, and the 
-         BulkSMS API, designed to streamline fuel requests 
-         and approvals between users and administrators. 
-         The system features secure user authentication 
-          with role-based access, allowing users to submit 
-          fuel requests that are stored in the SQLite 
-          database, while administrators manage, approve, 
-          or reject these requests through a clean JavaFX 
-          interface. Every new request automatically 
-          triggers an SMS notification to administrators 
-          via the BulkSMS API, ensuring real-time response 
-          and oversight. XML files are used for configuration 
-          and structured system data, and the overall solution 
-          provides a fast, organized, and automated workflow 
-          that replaces manual fuel management with a modern,
-          efficient digital process.
-      </p>
-    </div>
-    <div class="about-image" id="fueltrack">
-
-      <video controls id="fueltrack-video">
-        <source src="projects-images/FuelTrack/1003.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>  <br>
-
-      <img src="projects-images/FuelTrack/2.png"> <br>
-      <img src="projects-images/FuelTrack/1.png"> <br>
-      <img src="projects-images/FuelTrack/4.png"> <br>
-      <img src="projects-images/FuelTrack/3.png"> <br>
-    </div>    
-  </div>
-</section>
-
-  <footer class="footer">
-    <p>Email: magaelethabang@gmail.com</p>
-    <p>School: 240241177@ump.ac.za</p>
-    <p>Phone: +27 76 091 5274</p>
-    <p>© 2024 Thabang Magaele. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,127 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Education & certifications of Thabang Magaele — University of Mpumalanga, AWS, Huawei ICT Academy, FNB App Academy and IBM.">
+  <title>Education — Thabang Magaele</title>
+  <link rel="stylesheet" href="style.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>      
-  <title>Thabang Magaele</title>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <header class="header">
-    <img src="Images/headshot.jpeg">
-    <h1>Thabang Magaele <br>Graduate Developer</h1>
-    <nav id="navbar">
-       <a href="index.html">Home</a> 
-       <a href="projects.html">Projects</a>
-       <a href="education.html">Education</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-avatar" src="Images/headshot.jpeg" alt="Thabang Magaele">
+      <span class="brand-text">
+        <strong>Thabang Magaele</strong>
+        <small>Graduate Developer</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html" class="active">Education</a>
+      <a class="nav-cv" href="Resources/cert/Thabang Magaele CV.pdf" download="Thabang_Magaele_CV" target="_blank">Download CV</a>
     </nav>
   </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-  <span>
-    Thabang's Education <br>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="linkedin" target="_blank"><ion-icon name="logo-linkedin"  class="social-icon" ></ion-icon> </a> 
-        <a href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank"> <ion-icon name="logo-github"  class="social-icon" ></ion-icon> </a> 
-    </div>   
+  <main>
+    <!-- ===================== PAGE HEAD ===================== -->
+    <section class="page-head wrap reveal">
+      <span class="eyebrow" style="justify-content:center;">Background</span>
+      <h1>Thabang's <span class="gradient-text">Education</span></h1>
+      <p>My academic journey and the industry certifications I've earned along the way.</p>
+    </section>
 
-        <a href="Resources/Thabang Magaele Resume.pdf" download="Thabang_Magaele_CV" title="Download CV" target="_blank" id="cv-download"> Download CV </a>
+    <!-- ===================== TIMELINE ===================== -->
+    <section class="section" style="padding-top:16px;">
+      <div class="wrap">
+        <div class="timeline">
 
-</span>
+          <!-- University of Mpumalanga -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2024 — 2026</span>
+                <h2>University of Mpumalanga<br>Diploma in ICT — Application Development</h2>
+                <p>
+                  Currently pursuing a Diploma in ICT in Application Development.
+                  Gained foundational knowledge in programming languages such as Java
+                  and PHP, and developed skills in web development, database management
+                  and software engineering principles — engaging in projects that
+                  strengthened my problem-solving and teamwork abilities.
+                </p>
+              </div>
+              <img class="edu-cert" src="Images/ump.gif" alt="University of Mpumalanga">
+            </div>
+          </div>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        University of Mpumalanga - Diploma in ICT in Application Development <br>
-        (2024 - 2026)
-    </h2> 
-        <p>
-            Currently pursuing a Diploma in ICT in Application Development at the University of Mpumalanga. 
-            Gained foundational knowledge in programming languages such as Java and PHP. 
-            Developed skills in web development, database management, and software engineering principles. 
-            Engaged in various projects that enhanced problem-solving abilities and teamwork skills.
-        </p>
+          <!-- AWS Certified Cloud Practitioner -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2026</span>
+                <h2>Amazon Web Services<br>AWS Certified Cloud Practitioner</h2>
+                <p>
+                  Earned the AWS Certified Cloud Practitioner certification, demonstrating
+                  a foundational understanding of cloud computing concepts and AWS services.
+                  Gained knowledge across core areas including cloud architecture, security
+                  and compliance, pricing and billing models, the global AWS infrastructure,
+                  key compute, storage, database and networking services, and the AWS
+                  Well-Architected Framework.
+                </p>
+              </div>
+              <img class="edu-cert" src="Resources/cert/awsccp.png" alt="AWS Certified Cloud Practitioner certificate">
+            </div>
+          </div>
+
+          <!-- Huawei — Overview of AI -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2026</span>
+                <h2>Huawei ICT Academy<br>Certificate in Overview of AI</h2>
+                <p>
+                  Earned a Certificate in Overview of Artificial Intelligence, developing
+                  foundational knowledge of AI concepts, principles and real-world
+                  applications — including machine learning, deep learning, data
+                  processing and intelligent systems. Explored how AI is applied across
+                  industries, alongside development workflows, ethical considerations and
+                  emerging trends.
+                </p>
+              </div>
+              <img class="edu-cert" src="Resources/cert/Huawei ICT Academy.png" alt="Huawei ICT Academy certificate">
+            </div>
+          </div>
+
+          <!-- FNB App Academy -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2025</span>
+                <h2>FNB App Academy<br>Certificate in Fullstack Web Development</h2>
+                <p>
+                  Completed a Fullstack Web Development course, gaining hands-on
+                  experience building dynamic web applications with HTML, CSS and
+                  JavaScript. Learned backend development and database management, and
+                  produced a portfolio demonstrating both frontend and backend skills.
+                </p>
+              </div>
+              <img class="edu-cert" src="Resources/cert/FNB app academy.pdf.jpg" alt="FNB App Academy certificate">
+            </div>
+          </div>
+
+          <!-- Huawei — Cloud Basics -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2025</span>
+                <h2>Huawei ICT Academy<br>Certificate in Cloud Basics</h2>
+                <p>
+                  Earned foundational knowledge in cloud computing concepts and
+                  services — cloud service models (IaaS, PaaS, SaaS) and deployment
+                  models (public, private, hybrid). Studied key cloud technologies
+                  including virtualization, storage and networking, with practical
+                  hands-on exercises on cloud platforms.
+                </p>
+              </div>
+              <img class="edu-cert" src="Resources/cert/Huawei ICT Academy.png" alt="Huawei ICT Academy certificate">
+            </div>
+          </div>
+
+          <!-- IBM -->
+          <div class="edu-item reveal">
+            <div class="edu-card">
+              <div>
+                <span class="edu-year">2024</span>
+                <h2>IBM<br>Certificate in Data Science Tools</h2>
+                <p>
+                  Earned foundational knowledge in data science concepts and tools,
+                  including data analysis and visualization. Developed skills in
+                  handling datasets, performing exploratory data analysis and building
+                  basic predictive models.
+                </p>
+              </div>
+              <img class="edu-cert" src="Resources/cert/1.jpg" alt="IBM certificate">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="gradient-text">Thabang Magaele</h3>
+          <p>Graduate developer building scalable software, one line of code at a time. Open to internship opportunities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="mailto:magaelethabang@gmail.com">magaelethabang@gmail.com</a>
+          <a href="mailto:240241177@ump.ac.za">240241177@ump.ac.za</a>
+          <a href="tel:+27760915274">+27 76 091 5274</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2024–2026 Thabang Magaele. All rights reserved.</small>
+        <div class="hero-socials">
+          <a class="icon-btn" href="https://www.linkedin.com/in/thabang-magaele-6606bb2b2/" title="LinkedIn" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a class="icon-btn" href="https://github.com/Thabang-Magaele" title="GitHub" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="about-image" id="autospa">
-      <img src="Images/ump.gif"> <br>
-    </div>
-
-  </div>
-</section>
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        FNB App Academy - Certificate in Fullstack Web Development <br>
-        (2025)
-    </h2> 
-        <p>
-            Completed a Fullstack Web Development course at FNB App Academy. 
-            Acquired hands-on experience in building dynamic web applications using technologies like HTML, CSS and JavaScript. 
-            Learned backend development, along with database management. 
-            Developed a portfolio of projects demonstrating proficiency in both frontend and backend development.
-        </p>
-    </div>
-
-    <div class="about-image" id="">
-      <img src="Resources/cert/FNB app academy.pdf.jpg"> <br>
-    </div>
-
-  </div>
-</section>
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        Huawei ICT Academy - Certificate in Cloud Basics <br>
-        (2025)
-    </h2> 
-        <p>
-            Earned a Certificate in Cloud Basics from Huawei ICT Academy, gaining foundational knowledge in cloud computing concepts and services. 
-            Familiarized with different cloud service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid). 
-            Learned about key cloud technologies, including virtualization, storage, and networking in the cloud. 
-            Completed practical exercises that provided hands-on experience with cloud platforms and services.
-        </p>
-    </div>
-
-    <div class="about-image" id="">
-      <img src="Resources/cert/Huawei ICT Academy.png"> <br>
-    </div>
-
-  </div>
-</section>
-
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>
-        IBM - Certificate in Data Science Tools <br>
-        (2024)
-    </h2> 
-        <p>
-            Earned a Certificate in Data Science Tools from IBM, gaining foundational knowledge in data science concepts and tools.
-            Familiarized with data analysis, and visualization.
-            Developed skills in handling datasets, performing exploratory data analysis, and building basic predictive models.
-        </p>
-    </div>
-
-    <div class="about-image" id="">
-      <img src="Resources/cert/1.jpg"> <br>
-    </div>
-
-  </div>
-</section>
-
-  <footer class="footer">
-    <p>Email: magaelethabang@gmail.com</p>
-    <p>School: 240241177@ump.ac.za</p>
-    <p>Phone: +27 76 091 5274</p>
-    <p>© 2024 Thabang Magaele. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
