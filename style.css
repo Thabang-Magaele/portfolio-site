@@ -631,6 +631,20 @@ main { padding-top: 76px; }
   object-fit: cover;
   background: #000;
 }
+.img-placeholder {
+  width: 100%;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  border: 1px dashed rgba(255, 138, 101, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-mut);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+.project-media > .img-placeholder { aspect-ratio: 9 / 16; max-height: 460px; }
+.media-row .img-placeholder { aspect-ratio: 3 / 4; }
 
 /* ============================================================
    EDUCATION TIMELINE
