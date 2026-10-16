@@ -6,10 +6,24 @@
   <meta name="description" content="Education & certifications of Thabang Magaele — University of Mpumalanga, AWS, Huawei ICT Academy, FNB App Academy and IBM.">
   <title>Education — Thabang Magaele</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // set the theme before first paint: saved choice, else the device setting
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+
+  <!-- glass background: colour fields the frosted panels blur -->
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -31,6 +45,11 @@
       <a href="education.html" class="active">Education</a>
       <a class="nav-cv" href="Resources/cert/CURRICULUM VITAE THABANG MAGAELE.pdf" download="Thabang_Magaele_CV" target="_blank">Download CV</a>
     </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <ion-icon class="icon-moon" name="moon-outline" aria-hidden="true"></ion-icon>
+      <ion-icon class="icon-sun" name="sunny-outline" aria-hidden="true"></ion-icon>
+    </button>
   </header>
   <div class="nav-backdrop" id="navBackdrop"></div>
 
